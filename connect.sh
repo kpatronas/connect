@@ -4,7 +4,12 @@ mkdir -p $HOME/.connect/
 INVENTORY="$HOME/.connect/inventory.csv"
 ENVIRONMENT='.'
 HOSTS='.'
+OR='false'
 CONNECT='false'
+
+test -f $INVENTORY || touch $INVENTORY
+test -f $HOME/.connect/ext_vars.cfg || touch $HOME/.connect/ext_vars.cfg
+
 source $HOME/.connect/ext_vars.cfg
 
 while [[ $# -gt 0 ]]; do
