@@ -4,6 +4,8 @@ A simple connection manager written in bash
 ## How easy it is to open 3 ssh terminals 1 rdp connection and 1 web-browser at the same time?
 Very easy!
 
+Assuming that we ahve already configure our settings:
+
 To list connections
 ```
 $ ./connect.sh
