@@ -57,7 +57,7 @@ host4      prod       "Host4 rdp connection"
 If inventory.csv is configured correctly it will open two ssh connections and one rdp connection!
 
 ## What connect does?
-Connect is a simple and clutter free connection manager for bash which allows you in a single command to open selected terminals, remote desktop connections, web browsers or whatever want, the whole configuration takes place in two text files.
+Connect is a simple and clutter free connection manager for bash which allows you in a single command to open selected ssh, remote desktop connections, web browsers or whatever you want, the whole configuration takes place in two text files.
 
 ## Configuring connect
 When you first time run connect.sh will create the following two files if not exist
@@ -113,7 +113,4 @@ host2;test_env;"Another simple note";gnome-terminal -- ssh $ssh_username@host2
 host3;production_env;"A windows host";xfreerdp /d:$win_prd_domain /u:$win_prd_username /v:127.0.0.1:33891 /p:$win_prd_password
 web_page_vcenter;production_env;"vcenter webui";"/usr/bin/firefox https://vcenter1:443"
 ```
-
-Explaination
-
-We can confugure almost everything that can be selected and executed.
+We can configure almost everything that can be selected and executed.
