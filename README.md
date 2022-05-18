@@ -54,7 +54,7 @@ host2      prod       "Host1 ssh connection"
 host4      prod       "Host4 rdp connection"
 ```
 
-If invnetory.csv is configured correctly it will open two ssh connections and one rdp 
+If inventory.csv is configured correctly it will open two ssh connections and one rdp connection!
 
 ## What connect does?
 Connect is a simple and clutter free connection manager for bash which allows you in a single command to open selected terminals, remote desktop connections, web browsers or whatever want, the whole configuration takes place in two text files.
