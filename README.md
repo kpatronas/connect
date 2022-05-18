@@ -31,7 +31,10 @@ This file contains the hosts, a tag named environment that fit your needs, a not
 host1;production_env;"A simple note";gnome-terminal -- ssh username@host1
 ```
 
-host1 <-- a name we gave
-production_env <-- a production name we gave
-"A simple note" <-- a note we gave
+Explaination
+```
+host1                                <-- a name we gave
+production_env                       <-- a production name we gave
+"A simple note"                      <-- a note we gave
 gnome-terminal -- ssh username@host1 <-- This is the command that will be executed
+```
