@@ -4,7 +4,6 @@ mkdir -p $HOME/.connect/
 INVENTORY="$HOME/.connect/inventory.csv"
 ENVIRONMENT='.'
 HOSTS='.'
-OR='false'
 CONNECT='false'
 source $HOME/.connect/ext_vars.cfg
 
