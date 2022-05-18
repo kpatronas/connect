@@ -15,11 +15,6 @@ while [[ $# -gt 0 ]]; do
       CONNECT='true'
       shift
       ;;
-    -i|--inventory)
-      INVENTORY="$2"
-      shift
-      shift
-      ;;
     -e|--environment)
       ENVIRONMENT="$2"
       shift
@@ -34,7 +29,7 @@ while [[ $# -gt 0 ]]; do
 done
 
 awk -F ";" 'BEGIN{ printf("%-10s %-10s %-80s\n", "Host","Env","Notes")}'
-
+# Read File line by line
 while IFS="" read -r p || [ -n "$p" ]
 do
   h=`echo "$p" | cut -d";" -f1`
